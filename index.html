@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Página Personal – Jaime Muguruza</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>¡Hola, soy <span id="nombre">Jaime Muguruza</span>!</h1>
+    <p class="sub">Bienvenido a mi página personal</p>
+
+    <!-- 🔗 Enlaces debajo del nombre -->
+    <div class="links">
+      <a href="https://github.com/Jaime-MC-21" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+      <a href="mailto:jaime.muguruza.cabanillas@gmail.com">Email</a>
+    </div>
+
+    <!-- 🖼 Imagen debajo de los enlaces -->
+    <div class="imagen">
+      <img src="img/foto.jpg" alt="Mi foto de perfil">
+    </div>
+
+    <div class="actions">
+      <button class="btn" onclick="cambiarMensaje()">Cambiar mensaje</button>
+      <button class="btn ghost" id="temaBtn" onclick="toggleTema()" aria-pressed="false">Modo oscuro</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Sobre mí</h2>
+      <p id="mensaje">Me gusta aprender programación y crear proyectos.</p>
+    </section>
+
+    <section>
+      <h2>Habilidades</h2>
+      <ul class="tags">
+        <li>HTML - básico</li>
+        <li>CSS - básico</li>
+        <li>JavaScript - básico</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <p>Escríbeme a <a href="mailto:jaime.muguruza.cabanillas@gmail.com">jaime.muguruza.cabanillas@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="anio"></span> <span id="nombre2">Jaime Muguruza</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
